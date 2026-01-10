@@ -42,3 +42,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 300 * (index + 1));
     });
 });
+
+// about us
+document.addEventListener('DOMContentLoaded', function() {
+    // Handler untuk tombol play video
+    const playButton = document.querySelector('.play-button-overlay');
+    if(playButton) {
+        playButton.addEventListener('click', function() {
+            alert('Video sedang dimuat... (Ini adalah fungsi placeholder)');
+        });
+    }
+
+    // Efek hover sederhana untuk kartu kategori
+    const catCards = document.querySelectorAll('.category-card');
+    catCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'scale(1.02)';
+            card.style.transition = 'transform 0.3s ease';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'scale(1)';
+        });
+    });
+});

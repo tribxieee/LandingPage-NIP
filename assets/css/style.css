@@ -390,6 +390,144 @@ body {
   font-size: 0.95rem;
 }
 
+/* about us */
+.about-us {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.category-card {
+  height: 350px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.instructor-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1000");
+}
+
+.student-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1000");
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.overlay-content h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.btn-outline-light {
+  color: white;
+  border: 2px solid white;
+  background: transparent;
+  padding: 10px 28px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #2f327d; /* text jadi gelap */
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cyan {
+  background-color: #23bdee;
+  color: white;
+  border: none;
+  padding: 10px 28px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-cyan:hover {
+  background-color: #1daedc;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* classroom */
+.classroom {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.small-title {
+  color: #2f327d;
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.video-preview-wrapper {
+  position: relative;
+  padding: 20px;
+}
+
+.main-video-img {
+  position: relative;
+  z-index: 2;
+}
+
+.play-button-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.play-circle {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #23bdee;
+  font-size: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ornamen Kotak Dekoratif */
+.deco-square-blue {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #23bdee;
+  top: 5px;
+  left: 5px;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.deco-square-orange {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #f48c06;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 15px;
+  z-index: 1;
+}
+
 /* responsive */
 @media (max-width: 768px) {
   /* navbar */
@@ -540,5 +678,100 @@ body {
     height: 60px;
     font-size: 1.5rem;
     top: -30px;
+  }
+
+  /* about us */
+  .about-us {
+    padding: 60px 20px;
+  }
+
+  .about-us .section-title {
+    font-size: 2rem;
+  }
+
+  .about-us .section-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .about-us .row.g-4 {
+    row-gap: 30px;
+  }
+
+  .about-us .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .category-card {
+    height: 280px;
+    padding: 20px;
+  }
+
+  .overlay-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .btn-outline-light,
+  .btn-cyan {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* classroom */
+  .classroom {
+    padding: 60px 20px;
+  }
+
+  .classroom .row.align-items-center {
+    flex-direction: column;
+  }
+
+  .classroom .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .classroom .small-title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .classroom .section-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .video-preview-wrapper {
+    padding: 10px;
+  }
+
+  .main-video-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .play-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .deco-square-blue {
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+  }
+
+  .deco-square-orange {
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+    right: 0;
   }
 }
