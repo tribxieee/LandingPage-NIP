@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// hero section floating cards animation
+// hero
 document.addEventListener('DOMContentLoaded', function() {
     // Kode scroll navbar sebelumnya tetap ada...
 
