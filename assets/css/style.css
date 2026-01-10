@@ -1,0 +1,137 @@
+/* Reset & General */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF7ED; /* Warna krem sesuai gambar */
+    padding-top: 80px; /* Memberi ruang karena navbar fixed */
+}
+
+/* navbar */
+.custom-navbar {
+    background-color: transparent;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-scrolled {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.logo-navbar {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+.brand-text {
+    font-weight: 700;
+    font-size: 24px;
+    color: #2D3436;
+}
+
+.nav-link {
+    color: #2D3436 !important;
+    font-weight: 400;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: #F48C06 !important;
+}
+
+.btn-login {
+    background-color: #ffffff;
+    color: #2D3436;
+    border: 1px solid rgba(0,0,0,0.04);
+    padding: 10px 35px;
+    border-radius: 50px;
+    font-weight: 500;
+    margin: 5px;
+    box-shadow: 0 6px 12px rgba(244, 140, 6, 0.08);
+    transition: all 0.25s ease;
+}
+
+.btn-login:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(244, 140, 6, 0.15);
+}
+
+.btn-login:active {
+    transform: scale(0.96);
+}
+
+.btn-signup {
+    background-color: #F48C06;
+    color: #ffffff;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 50px;
+    font-weight: 500;
+    margin: 5px;
+    transition: all 0.25s ease;
+}
+
+.btn-signup:hover {
+    background-color: #e28005;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(244, 140, 6, 0.35);
+}
+
+.btn-signup:active {
+    transform: scale(0.96);
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+    /* navbar */
+    .custom-navbar {
+        padding: 10px 0;
+    }
+
+    .brand-text {
+        font-size: 20px;
+    }
+
+    .logo-navbar {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .navbar-collapse {
+        background-color: #ffffff;
+        margin-top: 15px;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .navbar-nav {
+        align-items: stretch !important;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    .btn-login,
+    .btn-signup {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    .btn-login {
+        box-shadow: none;
+    }
+}
