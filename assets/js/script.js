@@ -65,3 +65,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+const cards = document.querySelectorAll('.testimonial-card');
+const nextBtn = document.querySelector('.slider-nav-btn');
+let current = 0;
+
+nextBtn.addEventListener('click', () => {
+  cards[current].classList.remove('active');
+  current = (current + 1) % cards.length;
+  cards[current].classList.add('active');
+});
+
+
