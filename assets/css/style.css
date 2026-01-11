@@ -590,6 +590,50 @@ body {
   color: white;
 }
 
+/* integrations */
+.text-orange {
+  color: #f48c06 !important;
+}
+
+.btn-outline-orange {
+  color: #f48c06;
+  border-color: #f48c06;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-orange:hover {
+  background-color: #f48c06;
+  color: #fff;
+  border-color: #f48c06;
+}
+
+.integrations-section {
+  padding: 80px 0;
+}
+
+.integration-title {
+  color: #2f327d;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.line-decorator {
+  width: 50px;
+  height: 2px;
+  background-color: #2f327d;
+}
+
+.tracking-widest {
+  letter-spacing: 0.2em;
+}
+
+.integration-logo {
+  height: 150px; /* bisa disesuaikan */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
 /* responsive */
 @media (max-width: 768px) {
   /* navbar */
@@ -945,5 +989,45 @@ body {
   .btn-outline-orange {
     padding: 12px 25px;
     font-size: 0.95rem;
+  }
+
+  /* integrations */
+  .integrations-section {
+    padding: 50px 15px;
+  }
+
+  .integrations-section .row.g-4 {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .integrations-section .row.g-4 .col-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 0 !important;
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .integration-logo {
+    height: 70px;
+    width: auto;
+  }
+
+  .integration-content {
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 20px;
+  }
+
+  .integration-title {
+    font-size: 1.8rem;
+  }
+
+  .btn-outline-orange {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }
