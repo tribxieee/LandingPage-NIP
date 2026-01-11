@@ -75,5 +75,3 @@ nextBtn.addEventListener('click', () => {
   current = (current + 1) % cards.length;
   cards[current].classList.add('active');
 });
-
-
