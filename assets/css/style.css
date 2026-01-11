@@ -530,35 +530,65 @@ body {
 
 /* classroom features */
 .classroom-features-section {
-    background-color: #ffffff;
-    padding: 100px 0;
+  background-color: #ffffff;
+  padding: 100px 0;
 }
 
 .feature-heading {
-    color: #2F327D;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1.4;
+  color: #2f327d;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .feature-description {
-    color: #696984;
-    font-size: 1rem;
-    margin-bottom: 0;
+  color: #696984;
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .feature-icon-box {
-    width: 50px;
-    height: 50px;
-    background: white;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    font-size: 1.2rem;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 1.2rem;
 }
 
+.row.align-items-center img.img-fluid {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+
+.feature-img-2,
+.feature-img-3 {
+  max-height: 350px;
+  object-fit: contain;
+}
+
+.feature-img-4,
+.feature-img-5 {
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.btn-outline-orange {
+  color: #f48c06;
+  border: 1px solid #f48c06;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-orange:hover {
+  background-color: #f48c06;
+  color: white;
+}
 
 /* responsive */
 @media (max-width: 768px) {
@@ -808,19 +838,81 @@ body {
   }
 
   /* classroom features */
-    .classroom-features-section {
-    padding: 60px 20px;
+  .classroom-features-section {
+    padding: 50px 15px;
   }
 
   .classroom-features-section .row.align-items-center {
-    flex-direction: column;
+    flex-direction: column !important;
+    text-align: center;
   }
 
-  .classroom-features-section .col-lg-7,
-  .classroom-features-section .col-lg-5 {
+  .classroom-features-section .row.align-items-center .col-lg-7,
+  .classroom-features-section .row.align-items-center .col-lg-5 {
     max-width: 100%;
+    flex: 0 0 100%;
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+
+  .classroom-features-section .row.align-items-center img.img-fluid,
+  .classroom-features-section .ui-mockup-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+  }
+
+  .classroom-features-section .row.align-items-center:nth-child(1) > .col-lg-5 {
+    order: 1;
+  }
+
+  .classroom-features-section .row.align-items-center:nth-child(3) > .col-lg-7 {
+    order: 2;
+  }
+
+  .classroom-features-section .row.align-items-center:nth-child(3) > .col-lg-5 {
+    order: 1;
+  }
+
+  .classroom-features-section .row.align-items-center:nth-child(3) > .col-lg-7 {
+    order: 1;
+  }
+
+  .classroom-features-section .row.align-items-center:nth-child(3) > .col-lg-5 {
+    order: 2;
+  }
+
+  .classroom-features-section .row.align-items-center:nth-child(3) > .col-lg-7 {
+    order: 1;
+  }
+
+  .classroom-features-section .row.align-items-center:nth-child(4) > .col-lg-5 {
+    order: 2;
+  }
+
+  .classroom-features-section .row.align-items-center:nth-child(4) > .col-lg-7 {
+    order: 1;
+  }
+
+  .classroom-features-section .row.align-items-center:nth-child(5) > .col-lg-5 {
+    order: 2;
+  }
+
+  .classroom-features-section .row.align-items-center:nth-child(5) > .col-lg-7 {
+    order: 1;
+  }
+
+  .classroom-features-section .row.align-items-center:nth-child(6) > .col-lg-5 {
+    order: 2;
+  }
+
+  .classroom-features-section .row.align-items-center:nth-child(6) > .col-lg-7 {
+    order: 1;
+  }
+
+  .classroom-features-section .ps-lg-5 {
+    padding-left: 0 !important;
   }
 
   .feature-heading {
@@ -828,10 +920,16 @@ body {
     text-align: center;
   }
 
+  .feature-description {
+    font-size: 0.95rem;
+  }
+
   .feature-item {
     flex-direction: row;
     align-items: flex-start;
     margin-bottom: 20px;
+    justify-content: flex-start;
+    gap: 15px;
   }
 
   .feature-item p.feature-description {
@@ -842,5 +940,10 @@ body {
     width: 40px;
     height: 40px;
     font-size: 1rem;
+  }
+
+  .btn-outline-orange {
+    padding: 12px 25px;
+    font-size: 0.95rem;
   }
 }
